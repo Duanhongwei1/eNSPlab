@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.100">
+    <devices>
+        <dev id="A8F07466-F81F-4520-AF8A-95C67A7A6191" name="LSW2" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-C0-5B-B6" com_port="2002" bootmode="0" cx="633.000000" cy="193.000000" edit_left="660" edit_top="247">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+        <dev id="19C29B19-04EA-439f-B0DD-595118AF2672" name="LSW3" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-F1-1B-F4" com_port="2003" bootmode="0" cx="633.000000" cy="512.000000" edit_left="660" edit_top="566">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+        <dev id="033D4D74-43EF-41a1-953A-F86CEFEBA4FA" name="FW_B" poe="0" model="USG6000V" settings="" system_mac="00-E0-FC-9E-7F-BE" com_port="2001" bootmode="0" cx="877.000000" cy="374.000000" edit_left="940" edit_top="430">
+            <slot id="1">
+                <interface category="Ethernet" type="GE" slotIndex="0" cardIndex="0" interfaceIndex="0" />
+                <interface category="Ethernet" type="GE" slotIndex="1" cardIndex="0" interfaceIndex="0" />
+                <interface category="Ethernet" type="GE" slotIndex="1" cardIndex="0" interfaceIndex="1" />
+                <interface category="Ethernet" type="GE" slotIndex="1" cardIndex="0" interfaceIndex="2" />
+                <interface category="Ethernet" type="GE" slotIndex="1" cardIndex="0" interfaceIndex="3" />
+                <interface category="Ethernet" type="GE" slotIndex="1" cardIndex="0" interfaceIndex="4" />
+                <interface category="Ethernet" type="GE" slotIndex="1" cardIndex="0" interfaceIndex="5" />
+                <interface category="Ethernet" type="GE" slotIndex="1" cardIndex="0" interfaceIndex="6" />
+            </slot>
+        </dev>
+        <dev id="7A57D245-A1B3-4643-97C1-D9BDECF73198" name="AR1" poe="0" model="AR3260" settings="" system_mac="00-E0-FC-FC-38-E9" com_port="2004" bootmode="0" cx="633.000000" cy="33.000000" edit_left="660" edit_top="87">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="4555BC1C-CC9C-407c-957E-169CD60972CD" name="FW_A" poe="0" model="USG6000V" settings="" system_mac="00-E0-FC-FA-30-EC" com_port="2006" bootmode="0" cx="419.000000" cy="360.000000" edit_left="436" edit_top="414">
+            <slot id="1">
+                <interface category="Ethernet" type="GE" slotIndex="0" cardIndex="0" interfaceIndex="0" />
+                <interface category="Ethernet" type="GE" slotIndex="1" cardIndex="0" interfaceIndex="0" />
+                <interface category="Ethernet" type="GE" slotIndex="1" cardIndex="0" interfaceIndex="1" />
+                <interface category="Ethernet" type="GE" slotIndex="1" cardIndex="0" interfaceIndex="2" />
+                <interface category="Ethernet" type="GE" slotIndex="1" cardIndex="0" interfaceIndex="3" />
+                <interface category="Ethernet" type="GE" slotIndex="1" cardIndex="0" interfaceIndex="4" />
+                <interface category="Ethernet" type="GE" slotIndex="1" cardIndex="0" interfaceIndex="5" />
+                <interface category="Ethernet" type="GE" slotIndex="1" cardIndex="0" interfaceIndex="6" />
+            </slot>
+        </dev>
+        <dev id="0B7A0776-F6D1-4163-90B6-FDA481806E35" name="PC1" poe="0" model="PC" settings=" -simpc_ip 10.3.0.254  -simpc_mask 255.255.255.0  -simpc_gateway 10.3.0.3  -simpc_mac 54-89-98-5C-57-F2  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-5C-57-F2" com_port="0" bootmode="0" cx="636.000000" cy="677.000000" edit_left="663" edit_top="731">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="A8F07466-F81F-4520-AF8A-95C67A7A6191" destDeviceID="033D4D74-43EF-41a1-953A-F86CEFEBA4FA">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="0" srcBoundRect_X="694.682983" srcBoundRect_Y="245.727951" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="1" tarBoundRectIsMoved="1" tarBoundRect_X="869.317017" tarBoundRect_Y="375.272034" tarOffset_X="-33.000000" tarOffset_Y="-5.000000" />
+        </line>
+        <line srcDeviceID="033D4D74-43EF-41a1-953A-F86CEFEBA4FA" destDeviceID="19C29B19-04EA-439f-B0DD-595118AF2672">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="1" srcBoundRect_X="866.411560" srcBoundRect_Y="422.259033" srcOffset_X="-38.000000" srcOffset_Y="-14.000000" tarIndex="1" tarBoundRectIsMoved="0" tarBoundRect_X="697.588440" tarBoundRect_Y="517.740967" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="7A57D245-A1B3-4643-97C1-D9BDECF73198" destDeviceID="A8F07466-F81F-4520-AF8A-95C67A7A6191">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="660.000000" srcBoundRect_Y="103.183769" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="2" tarBoundRectIsMoved="0" tarBoundRect_X="660.000000" tarBoundRect_Y="176.816238" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="4555BC1C-CC9C-407c-957E-169CD60972CD" destDeviceID="A8F07466-F81F-4520-AF8A-95C67A7A6191">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="480.044312" srcBoundRect_Y="360.432709" srcOffset_X="0.000000" srcOffset_Y="4.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="625.955688" tarBoundRect_Y="246.567307" tarOffset_X="-56.000000" tarOffset_Y="-12.000000" />
+        </line>
+        <line srcDeviceID="4555BC1C-CC9C-407c-957E-169CD60972CD" destDeviceID="19C29B19-04EA-439f-B0DD-595118AF2672">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="1" srcBoundRect_X="481.206635" srcBoundRect_Y="412.006592" srcOffset_X="-2.000000" srcOffset_Y="-17.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="624.793335" tarBoundRect_Y="513.993408" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="4555BC1C-CC9C-407c-957E-169CD60972CD" destDeviceID="033D4D74-43EF-41a1-953A-F86CEFEBA4FA">
+            <interfacePair lineName="Copper" srcIndex="7" srcBoundRectIsMoved="0" srcBoundRect_X="489.163605" srcBoundRect_Y="388.319397" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="7" tarBoundRectIsMoved="0" tarBoundRect_X="860.836365" tarBoundRect_Y="399.680603" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="19C29B19-04EA-439f-B0DD-595118AF2672" destDeviceID="0B7A0776-F6D1-4163-90B6-FDA481806E35">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="0" srcBoundRect_X="660.785034" srcBoundRect_Y="582.176636" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="662.214966" tarBoundRect_Y="660.823364" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes>
+        <shape type="2" filloption="0" color="16744448" upleftcorner="498,258" width="351" height="78" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+        <shape type="2" filloption="0" color="16744448" upleftcorner="450,406" width="452" height="86" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+    </shapes>
+    <txttips>
+        <txttip left="698" top="128" right="883" bottom="152" content="接入点1.1.1.10/24" fontname="Consolas" fontstyle="0" editsize="140" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="598" top="277" right="720" bottom="323" content="VRRP备份组1&#x0D;&#x0A;1.1.1.1/24" fontname="Consolas" fontstyle="0" editsize="140" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="597" top="432" right="730" bottom="478" content="VRRP备份组2&#x0D;&#x0A;10.3.0.3/24" fontname="Consolas" fontstyle="0" editsize="140" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="317" top="433" right="439" bottom="457" content="10.3.0.1/24" fontname="Consolas" fontstyle="0" editsize="140" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="912" top="445" right="1034" bottom="469" content="10.3.0.2/24" fontname="Consolas" fontstyle="0" editsize="140" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="297" top="325" right="419" bottom="349" content="10.2.0.1/24" fontname="Consolas" fontstyle="0" editsize="140" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="909" top="347" right="1031" bottom="371" content="10.2.0.2/24" fontname="Consolas" fontstyle="0" editsize="140" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="629" top="377" right="762" bottom="401" content="10.10.0.0/24" fontname="Consolas" fontstyle="0" editsize="140" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="23" top="492" right="518" bottom="587" content="配置VRRP&#x0D;&#x0A;[FW_A-GigabitEthernet1/0/1]vrrp vrid 2 virtual-ip 10.3.0.3 24 ac&#x0D;&#x0A;[FW_A-GigabitEthernet1/0/1]q&#x0D;&#x0A;配置心跳线&#x0D;&#x0A;[FW_A]hrp int g1/0/6 remote 10.10.0.2&#x0D;&#x0A;[FW_A]hrp en" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>
